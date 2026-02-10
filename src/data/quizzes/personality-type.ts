@@ -1,0 +1,225 @@
+import type { QuizConfig } from '@/lib/types';
+
+export const personalityTypeQuiz: QuizConfig = {
+  slug: 'personality-type',
+  title: "What's Your Personality Type?",
+  description: 'Discover your unique personality archetype and what makes you tick.',
+  category: 'personality',
+  image: '🧠',
+  timeEstimate: '5 min',
+  questionCount: 16,
+  metaDescription: 'Take our free personality type quiz to discover your unique archetype. Are you a Visionary, Guardian, Explorer, or Creator? Find out now!',
+  keywords: ['personality type', 'personality test', 'personality quiz', 'MBTI', 'personality archetype'],
+  questions: [
+    {
+      id: 'q1',
+      question: 'At a party, you typically find yourself...',
+      options: [
+        { id: 'a', text: 'In the center, telling stories and making everyone laugh', scores: { visionary: 2, explorer: 1 } },
+        { id: 'b', text: 'Having deep conversations with one or two people', scores: { guardian: 2, analyst: 1 } },
+        { id: 'c', text: 'Observing and analyzing the social dynamics', scores: { analyst: 2, creator: 1 } },
+        { id: 'd', text: 'Moving between groups, connecting people', scores: { mediator: 2, visionary: 1 } },
+      ],
+    },
+    {
+      id: 'q2',
+      question: 'When faced with a difficult decision, you rely most on...',
+      options: [
+        { id: 'a', text: 'Your gut feeling and intuition', scores: { visionary: 2, explorer: 1 } },
+        { id: 'b', text: 'Past experiences and proven methods', scores: { guardian: 2, analyst: 1 } },
+        { id: 'c', text: 'Logical analysis and data', scores: { analyst: 2, guardian: 1 } },
+        { id: 'd', text: 'How it will affect others', scores: { mediator: 2, guardian: 1 } },
+      ],
+    },
+    {
+      id: 'q3',
+      question: 'Your ideal weekend involves...',
+      options: [
+        { id: 'a', text: 'Trying something completely new and adventurous', scores: { explorer: 2, visionary: 1 } },
+        { id: 'b', text: 'Relaxing at home with familiar comforts', scores: { guardian: 2, creator: 1 } },
+        { id: 'c', text: 'Working on a creative project', scores: { creator: 2, analyst: 1 } },
+        { id: 'd', text: 'Spending quality time with loved ones', scores: { mediator: 2, guardian: 1 } },
+      ],
+    },
+    {
+      id: 'q4',
+      question: 'In group projects, you naturally become...',
+      options: [
+        { id: 'a', text: 'The leader with the big vision', scores: { visionary: 2, explorer: 1 } },
+        { id: 'b', text: 'The organizer who keeps everyone on track', scores: { guardian: 2, analyst: 1 } },
+        { id: 'c', text: 'The problem-solver who figures out solutions', scores: { analyst: 2, creator: 1 } },
+        { id: 'd', text: 'The mediator who ensures harmony', scores: { mediator: 2, guardian: 1 } },
+      ],
+    },
+    {
+      id: 'q5',
+      question: 'When learning something new, you prefer to...',
+      options: [
+        { id: 'a', text: 'Jump in and figure it out as you go', scores: { explorer: 2, visionary: 1 } },
+        { id: 'b', text: 'Follow a structured course or manual', scores: { guardian: 2, analyst: 1 } },
+        { id: 'c', text: 'Research extensively before starting', scores: { analyst: 2, guardian: 1 } },
+        { id: 'd', text: 'Learn by watching and creating', scores: { creator: 2, mediator: 1 } },
+      ],
+    },
+    {
+      id: 'q6',
+      question: 'Your workspace is usually...',
+      options: [
+        { id: 'a', text: 'Organized chaos that makes sense to you', scores: { creator: 2, explorer: 1 } },
+        { id: 'b', text: 'Meticulously organized and clean', scores: { guardian: 2, analyst: 1 } },
+        { id: 'c', text: 'Minimalist with only essentials', scores: { analyst: 2, guardian: 1 } },
+        { id: 'd', text: 'Decorated with personal touches and memories', scores: { mediator: 2, creator: 1 } },
+      ],
+    },
+    {
+      id: 'q7',
+      question: 'When someone asks for advice, you...',
+      options: [
+        { id: 'a', text: 'Encourage them to take bold action', scores: { visionary: 2, explorer: 1 } },
+        { id: 'b', text: 'Share practical, time-tested solutions', scores: { guardian: 2, analyst: 1 } },
+        { id: 'c', text: 'Analyze the situation objectively', scores: { analyst: 2, guardian: 1 } },
+        { id: 'd', text: 'Listen empathetically and validate their feelings', scores: { mediator: 2, creator: 1 } },
+      ],
+    },
+    {
+      id: 'q8',
+      question: 'Your biggest fear is...',
+      options: [
+        { id: 'a', text: 'Being stuck in a boring routine', scores: { explorer: 2, visionary: 1 } },
+        { id: 'b', text: 'Uncertainty and lack of stability', scores: { guardian: 2, analyst: 1 } },
+        { id: 'c', text: 'Making illogical or irrational decisions', scores: { analyst: 2, guardian: 1 } },
+        { id: 'd', text: 'Conflict and disappointing others', scores: { mediator: 2, guardian: 1 } },
+      ],
+    },
+    {
+      id: 'q9',
+      question: 'In conversations, you tend to focus on...',
+      options: [
+        { id: 'a', text: 'Future possibilities and big ideas', scores: { visionary: 2, analyst: 1 } },
+        { id: 'b', text: 'Practical matters and real experiences', scores: { guardian: 2, mediator: 1 } },
+        { id: 'c', text: 'Concepts, theories, and how things work', scores: { analyst: 2, creator: 1 } },
+        { id: 'd', text: 'People, relationships, and emotions', scores: { mediator: 2, guardian: 1 } },
+      ],
+    },
+    {
+      id: 'q10',
+      question: 'Under stress, you typically...',
+      options: [
+        { id: 'a', text: 'Seek out new experiences or challenges', scores: { explorer: 2, visionary: 1 } },
+        { id: 'b', text: 'Stick to routines and familiar comforts', scores: { guardian: 2, mediator: 1 } },
+        { id: 'c', text: 'Retreat and analyze the situation alone', scores: { analyst: 2, creator: 1 } },
+        { id: 'd', text: 'Talk it out with trusted friends', scores: { mediator: 2, guardian: 1 } },
+      ],
+    },
+    {
+      id: 'q11',
+      question: 'Your friends would describe you as...',
+      options: [
+        { id: 'a', text: 'Inspiring and full of ideas', scores: { visionary: 2, explorer: 1 } },
+        { id: 'b', text: 'Reliable and trustworthy', scores: { guardian: 2, mediator: 1 } },
+        { id: 'c', text: 'Intelligent and logical', scores: { analyst: 2, guardian: 1 } },
+        { id: 'd', text: 'Creative and unique', scores: { creator: 2, explorer: 1 } },
+      ],
+    },
+    {
+      id: 'q12',
+      question: 'When planning a vacation, you...',
+      options: [
+        { id: 'a', text: 'Pick an exciting destination and wing it', scores: { explorer: 2, visionary: 1 } },
+        { id: 'b', text: 'Create a detailed itinerary', scores: { guardian: 2, analyst: 1 } },
+        { id: 'c', text: 'Research the best-rated experiences', scores: { analyst: 2, guardian: 1 } },
+        { id: 'd', text: 'Find places for meaningful experiences', scores: { creator: 2, mediator: 1 } },
+      ],
+    },
+    {
+      id: 'q13',
+      question: 'Your approach to conflict is to...',
+      options: [
+        { id: 'a', text: 'Address it directly and move forward', scores: { visionary: 2, explorer: 1 } },
+        { id: 'b', text: 'Seek compromise and fair solutions', scores: { guardian: 2, mediator: 1 } },
+        { id: 'c', text: 'Analyze objectively and find logical resolution', scores: { analyst: 2, guardian: 1 } },
+        { id: 'd', text: 'Understand all perspectives and mediate', scores: { mediator: 2, creator: 1 } },
+      ],
+    },
+    {
+      id: 'q14',
+      question: 'You feel most fulfilled when...',
+      options: [
+        { id: 'a', text: 'Leading change and making an impact', scores: { visionary: 2, explorer: 1 } },
+        { id: 'b', text: 'Providing stability and support to others', scores: { guardian: 2, mediator: 1 } },
+        { id: 'c', text: 'Solving complex problems', scores: { analyst: 2, creator: 1 } },
+        { id: 'd', text: 'Creating something beautiful or meaningful', scores: { creator: 2, visionary: 1 } },
+      ],
+    },
+    {
+      id: 'q15',
+      question: 'Your energy comes from...',
+      options: [
+        { id: 'a', text: 'New experiences and meeting people', scores: { explorer: 2, visionary: 1 } },
+        { id: 'b', text: 'Accomplishing tasks and maintaining order', scores: { guardian: 2, analyst: 1 } },
+        { id: 'c', text: 'Deep thinking and intellectual pursuits', scores: { analyst: 2, creator: 1 } },
+        { id: 'd', text: 'Meaningful connections with others', scores: { mediator: 2, guardian: 1 } },
+      ],
+    },
+    {
+      id: 'q16',
+      question: 'When starting a new project, you first...',
+      options: [
+        { id: 'a', text: 'Envision the end goal and get excited', scores: { visionary: 2, creator: 1 } },
+        { id: 'b', text: 'Create a step-by-step plan', scores: { guardian: 2, analyst: 1 } },
+        { id: 'c', text: 'Research best practices and methods', scores: { analyst: 2, guardian: 1 } },
+        { id: 'd', text: 'Consider who will be involved and affected', scores: { mediator: 2, guardian: 1 } },
+      ],
+    },
+  ],
+  results: [
+    {
+      id: 'visionary',
+      title: 'The Visionary',
+      emoji: '🚀',
+      description: 'You are a big-picture thinker with an eye on the future. Bold, innovative, and inspirational, you thrive on creating change and pursuing ambitious goals. Your enthusiasm is contagious, and you excel at motivating others to join your mission.',
+      traits: ['Innovative', 'Charismatic', 'Future-focused', 'Ambitious'],
+      funFact: 'Visionaries make up about 16% of the population and are often found in leadership and entrepreneurial roles!',
+    },
+    {
+      id: 'guardian',
+      title: 'The Guardian',
+      emoji: '🛡️',
+      description: 'You are the dependable anchor that others rely on. Practical, organized, and responsible, you create stability and order in your environment. Your commitment to duty and tradition makes you an invaluable team member who ensures everything runs smoothly.',
+      traits: ['Reliable', 'Organized', 'Loyal', 'Practical'],
+      funFact: 'Guardians are the most common personality type, representing about 40% of the population!',
+    },
+    {
+      id: 'explorer',
+      title: 'The Explorer',
+      emoji: '🌍',
+      description: 'You are adventurous and spontaneous, always seeking new experiences. With an infectious zest for life, you embrace change and uncertainty as opportunities for growth. Your courage to venture into the unknown inspires others to break free from their comfort zones.',
+      traits: ['Adventurous', 'Spontaneous', 'Curious', 'Bold'],
+      funFact: 'Explorers are natural risk-takers and are 3x more likely to travel to exotic destinations!',
+    },
+    {
+      id: 'creator',
+      title: 'The Creator',
+      emoji: '🎨',
+      description: 'You are an imaginative soul with a unique perspective on the world. Whether through art, innovation, or problem-solving, you express yourself in original ways. Your creativity and authenticity make you stand out, and you inspire others to embrace their own uniqueness.',
+      traits: ['Creative', 'Authentic', 'Artistic', 'Unconventional'],
+      funFact: 'Creators are often found in artistic fields but also make breakthrough scientists and innovators!',
+    },
+    {
+      id: 'analyst',
+      title: 'The Analyst',
+      emoji: '🔬',
+      description: 'You are a logical thinker who values knowledge and competence. With a sharp, analytical mind, you excel at solving complex problems and seeing patterns others miss. Your objectivity and expertise make you the go-to person when critical thinking is needed.',
+      traits: ['Logical', 'Strategic', 'Knowledgeable', 'Objective'],
+      funFact: 'Analysts are masters of strategy and are more likely to excel at chess and complex games!',
+    },
+    {
+      id: 'mediator',
+      title: 'The Mediator',
+      emoji: '🤝',
+      description: 'You are empathetic and diplomatic, with a natural ability to understand and connect with others. Harmony and authentic relationships are your priorities. Your emotional intelligence and genuine care for others make you a trusted confidant and peacemaker.',
+      traits: ['Empathetic', 'Diplomatic', 'Caring', 'Harmonious'],
+      funFact: 'Mediators have exceptional emotional intelligence and can often sense tension before conflicts arise!',
+    },
+  ],
+};

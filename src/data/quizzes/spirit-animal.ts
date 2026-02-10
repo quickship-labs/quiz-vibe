@@ -1,0 +1,87 @@
+import type { QuizConfig } from '@/lib/types';
+
+export const spiritAnimalQuiz: QuizConfig = {
+  slug: 'spirit-animal',
+  title: 'What Is Your Spirit Animal?',
+  description: 'Discover which animal best represents your soul and personality.',
+  category: 'fun',
+  image: '🦊',
+  timeEstimate: '3 min',
+  questionCount: 10,
+  metaDescription: 'What is your spirit animal? Take this free quiz to discover which animal matches your personality. Wolf, eagle, bear, fox, or something else? Find out now!',
+  keywords: ['spirit animal quiz', 'what is my spirit animal', 'animal personality quiz', 'spirit animal test'],
+  questions: [
+    { id: 'q1', question: 'How do you prefer to spend a free afternoon?', options: [
+      { id: 'a', text: 'Exploring the outdoors and hiking', scores: { wolf: 2, eagle: 1 } },
+      { id: 'b', text: 'Curling up with a good book at home', scores: { owl: 2, bear: 1 } },
+      { id: 'c', text: 'Hanging out with a big group of friends', scores: { dolphin: 2, lion: 1 } },
+      { id: 'd', text: 'Working on a creative project', scores: { fox: 2, butterfly: 1 } },
+    ]},
+    { id: 'q2', question: 'What quality do you value most in yourself?', options: [
+      { id: 'a', text: 'My loyalty and protectiveness', scores: { wolf: 2, bear: 1 } },
+      { id: 'b', text: 'My intelligence and insight', scores: { owl: 2, fox: 1 } },
+      { id: 'c', text: 'My courage and leadership', scores: { lion: 2, eagle: 1 } },
+      { id: 'd', text: 'My adaptability and resourcefulness', scores: { fox: 2, dolphin: 1 } },
+    ]},
+    { id: 'q3', question: 'In a group project, what role do you take?', options: [
+      { id: 'a', text: 'The fearless leader who takes charge', scores: { lion: 2, eagle: 1 } },
+      { id: 'b', text: 'The strategist working behind the scenes', scores: { fox: 2, owl: 1 } },
+      { id: 'c', text: 'The team player keeping everyone happy', scores: { dolphin: 2, deer: 1 } },
+      { id: 'd', text: 'The independent worker who gets things done alone', scores: { eagle: 2, bear: 1 } },
+    ]},
+    { id: 'q4', question: 'How do you handle conflict?', options: [
+      { id: 'a', text: 'Face it head-on with strength', scores: { bear: 2, lion: 1 } },
+      { id: 'b', text: 'Find a clever way around it', scores: { fox: 2, owl: 1 } },
+      { id: 'c', text: 'Try to mediate and find peace', scores: { dolphin: 2, deer: 1 } },
+      { id: 'd', text: 'Rise above it and see the big picture', scores: { eagle: 2, owl: 1 } },
+    ]},
+    { id: 'q5', question: 'What environment makes you happiest?', options: [
+      { id: 'a', text: 'Mountains and forests', scores: { bear: 2, wolf: 1 } },
+      { id: 'b', text: 'Open skies and vast landscapes', scores: { eagle: 2, hawk: 1 } },
+      { id: 'c', text: 'Near water — oceans, lakes, rivers', scores: { dolphin: 2, deer: 1 } },
+      { id: 'd', text: 'A garden full of life and color', scores: { butterfly: 2, fox: 1 } },
+    ]},
+    { id: 'q6', question: 'What is your greatest strength?', options: [
+      { id: 'a', text: 'My fierce determination', scores: { wolf: 2, lion: 1 } },
+      { id: 'b', text: 'My wisdom and patience', scores: { owl: 2, bear: 1 } },
+      { id: 'c', text: 'My ability to transform and adapt', scores: { butterfly: 2, fox: 1 } },
+      { id: 'd', text: 'My speed and sharp instincts', scores: { hawk: 2, eagle: 1 } },
+    ]},
+    { id: 'q7', question: 'How do you recharge your energy?', options: [
+      { id: 'a', text: 'Spending time alone in nature', scores: { bear: 2, deer: 1 } },
+      { id: 'b', text: 'Playing and socializing with friends', scores: { dolphin: 2, lion: 1 } },
+      { id: 'c', text: 'Quiet reflection and meditation', scores: { owl: 2, eagle: 1 } },
+      { id: 'd', text: 'Physical activity and adventure', scores: { wolf: 2, hawk: 1 } },
+    ]},
+    { id: 'q8', question: 'What do others admire about you?', options: [
+      { id: 'a', text: 'My bravery and confidence', scores: { lion: 2, hawk: 1 } },
+      { id: 'b', text: 'My kindness and gentleness', scores: { deer: 2, dolphin: 1 } },
+      { id: 'c', text: 'My cleverness and quick thinking', scores: { fox: 2, owl: 1 } },
+      { id: 'd', text: 'My free spirit and beauty', scores: { butterfly: 2, eagle: 1 } },
+    ]},
+    { id: 'q9', question: 'Pick a time of day that resonates with you:', options: [
+      { id: 'a', text: 'Dawn — fresh starts and possibility', scores: { eagle: 2, hawk: 1 } },
+      { id: 'b', text: 'Midday — full energy and action', scores: { lion: 2, wolf: 1 } },
+      { id: 'c', text: 'Dusk — peaceful transitions', scores: { deer: 2, butterfly: 1 } },
+      { id: 'd', text: 'Night — mystery and deep thought', scores: { owl: 2, fox: 1 } },
+    ]},
+    { id: 'q10', question: 'What life motto speaks to you?', options: [
+      { id: 'a', text: 'Strength in the pack — loyalty above all', scores: { wolf: 2, bear: 1 } },
+      { id: 'b', text: 'Soar high and see the world from above', scores: { eagle: 2, hawk: 1 } },
+      { id: 'c', text: 'Embrace change and let yourself transform', scores: { butterfly: 2, dolphin: 1 } },
+      { id: 'd', text: 'Trust your instincts and outsmart the rest', scores: { fox: 2, owl: 1 } },
+    ]},
+  ],
+  results: [
+    { id: 'wolf', title: 'The Wolf', emoji: '🐺', description: 'Loyal, protective, and deeply connected to your pack. You value trust and community above all else. Like the wolf, you are fiercely devoted to those you love and will go to great lengths to protect them.', traits: ['Loyal', 'Protective', 'Social', 'Determined'], funFact: 'Wolves can travel up to 30 miles in a single day and maintain lifelong bonds with their pack!' },
+    { id: 'eagle', title: 'The Eagle', emoji: '🦅', description: 'Visionary, independent, and majestic. You see life from a higher perspective and are not afraid to fly solo. Your sharp focus and clarity of vision allow you to spot opportunities others miss.', traits: ['Visionary', 'Independent', 'Focused', 'Majestic'], funFact: 'Eagles can see up to 3 miles away and spot prey while soaring at incredible heights!' },
+    { id: 'bear', title: 'The Bear', emoji: '🐻', description: 'Strong, grounded, and introspective. You have a powerful presence but also know when to retreat and recharge. Your strength is matched only by your capacity for deep reflection and patience.', traits: ['Strong', 'Patient', 'Grounded', 'Introspective'], funFact: 'Bears are incredibly intelligent and have been observed using tools and solving complex problems in the wild!' },
+    { id: 'dolphin', title: 'The Dolphin', emoji: '🐬', description: 'Playful, social, and emotionally intelligent. You bring joy to those around you and have an incredible ability to connect with others. Your compassion and positive energy are truly infectious.', traits: ['Playful', 'Social', 'Empathetic', 'Joyful'], funFact: 'Dolphins can recognize themselves in mirrors and are known to help other species, including humans!' },
+    { id: 'owl', title: 'The Owl', emoji: '🦉', description: 'Wise, observant, and thoughtful. You see what others miss and possess deep inner wisdom. Your quiet intelligence and keen perception make you an invaluable advisor and thinker.', traits: ['Wise', 'Observant', 'Thoughtful', 'Intuitive'], funFact: 'Owls can rotate their heads 270 degrees and have hearing so acute they can locate prey under snow!' },
+    { id: 'fox', title: 'The Fox', emoji: '🦊', description: 'Clever, adaptable, and charming. You navigate life with wit and grace, finding creative solutions to every challenge. Your cunning intellect is paired with a magnetic personality.', traits: ['Clever', 'Adaptable', 'Charming', 'Resourceful'], funFact: 'Foxes use the Earths magnetic field to hunt and can hear a watch ticking from 40 yards away!' },
+    { id: 'lion', title: 'The Lion', emoji: '🦁', description: 'Brave, charismatic, and born to lead. You command respect and inspire others with your courage and confidence. Your natural authority and warm heart make you a leader others want to follow.', traits: ['Brave', 'Charismatic', 'Confident', 'Leader'], funFact: 'Lions are the only cats that live in social groups, and a lions roar can be heard from 5 miles away!' },
+    { id: 'butterfly', title: 'The Butterfly', emoji: '🦋', description: 'Transformative, beautiful, and free-spirited. You embrace change and personal growth with grace. Your ability to reinvent yourself and spread beauty wherever you go inspires everyone around you.', traits: ['Transformative', 'Free-spirited', 'Beautiful', 'Resilient'], funFact: 'Butterflies can taste with their feet and some species migrate over 3,000 miles!' },
+    { id: 'deer', title: 'The Deer', emoji: '🦌', description: 'Gentle, graceful, and deeply intuitive. You move through life with quiet dignity and sensitivity. Your gentle nature is a strength, allowing you to sense danger and find peace in even the wildest situations.', traits: ['Gentle', 'Graceful', 'Intuitive', 'Sensitive'], funFact: 'Deer can run up to 30 mph, jump 10 feet high, and their antlers are the fastest growing tissue in the animal kingdom!' },
+    { id: 'hawk', title: 'The Hawk', emoji: '🦅', description: 'Sharp, decisive, and intensely focused. You have laser-like precision in everything you do and can react with lightning speed when opportunity strikes. Your keen awareness gives you an edge in any situation.', traits: ['Sharp', 'Decisive', 'Focused', 'Swift'], funFact: 'Hawks can dive at speeds over 150 mph and have vision 8 times sharper than humans!' },
+  ],
+};
