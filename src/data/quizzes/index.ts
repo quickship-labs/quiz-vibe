@@ -5,6 +5,10 @@ import { emotionalIntelligenceQuiz } from './emotional-intelligence';
 import { spiritAnimalQuiz } from './spirit-animal';
 import { elementTypeQuiz } from './element-type';
 import { mentalAgeQuiz } from './mental-age';
+import { brainTypeQuiz } from './brain-type';
+import { careerMatchQuiz } from './career-match';
+import { travelPersonalityQuiz } from './travel-personality';
+import { generalKnowledgeQuiz } from './general-knowledge';
 
 export const allQuizzes: QuizConfig[] = [
   personalityTypeQuiz,
@@ -13,6 +17,10 @@ export const allQuizzes: QuizConfig[] = [
   spiritAnimalQuiz,
   elementTypeQuiz,
   mentalAgeQuiz,
+  brainTypeQuiz,
+  careerMatchQuiz,
+  travelPersonalityQuiz,
+  generalKnowledgeQuiz,
 ];
 
 export function getQuizBySlug(slug: string): QuizConfig | undefined {
@@ -30,4 +38,8 @@ export {
   spiritAnimalQuiz,
   elementTypeQuiz,
   mentalAgeQuiz,
+  brainTypeQuiz,
+  careerMatchQuiz,
+  travelPersonalityQuiz,
+  generalKnowledgeQuiz,
 };

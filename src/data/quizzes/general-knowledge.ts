@@ -1,0 +1,137 @@
+import type { QuizConfig } from '@/lib/types';
+
+export const generalKnowledgeQuiz: QuizConfig = {
+  slug: 'general-knowledge-trivia',
+  title: 'General Knowledge Trivia',
+  description: 'Test your brainpower with 12 questions spanning geography, science, history, and pop culture!',
+  category: 'trivia',
+  image: '🧩',
+  timeEstimate: '4 min',
+  questionCount: 12,
+  metaDescription: 'How much do you really know? Take this free general knowledge trivia quiz with 12 questions on geography, science, history, and pop culture. Are you a novice or a genius? Find out!',
+  keywords: ['general knowledge quiz', 'trivia quiz', 'how smart are you quiz', 'general trivia test', 'knowledge quiz', 'brain quiz'],
+  questions: [
+    { id: 'q1', question: 'What is the largest ocean on Earth?', options: [
+      { id: 'a', text: 'Atlantic Ocean', scores: { score: 0 } },
+      { id: 'b', text: 'Indian Ocean', scores: { score: 0 } },
+      { id: 'c', text: 'Pacific Ocean', scores: { score: 1 }, correctAnswer: true },
+      { id: 'd', text: 'Arctic Ocean', scores: { score: 0 } },
+    ]},
+    { id: 'q2', question: 'Which planet in our solar system is known for its prominent ring system?', options: [
+      { id: 'a', text: 'Jupiter', scores: { score: 0 } },
+      { id: 'b', text: 'Saturn', scores: { score: 1 }, correctAnswer: true },
+      { id: 'c', text: 'Uranus', scores: { score: 0 } },
+      { id: 'd', text: 'Neptune', scores: { score: 0 } },
+    ]},
+    { id: 'q3', question: 'The Great Wall of China was primarily built to protect against invasions from which direction?', options: [
+      { id: 'a', text: 'The south', scores: { score: 0 } },
+      { id: 'b', text: 'The east', scores: { score: 0 } },
+      { id: 'c', text: 'The west', scores: { score: 0 } },
+      { id: 'd', text: 'The north', scores: { score: 1 }, correctAnswer: true },
+    ]},
+    { id: 'q4', question: 'What is the chemical symbol for gold?', options: [
+      { id: 'a', text: 'Go', scores: { score: 0 } },
+      { id: 'b', text: 'Au', scores: { score: 1 }, correctAnswer: true },
+      { id: 'c', text: 'Gd', scores: { score: 0 } },
+      { id: 'd', text: 'Ag', scores: { score: 0 } },
+    ]},
+    { id: 'q5', question: 'Which country is home to the ancient city of Machu Picchu?', options: [
+      { id: 'a', text: 'Brazil', scores: { score: 0 } },
+      { id: 'b', text: 'Colombia', scores: { score: 0 } },
+      { id: 'c', text: 'Peru', scores: { score: 1 }, correctAnswer: true },
+      { id: 'd', text: 'Chile', scores: { score: 0 } },
+    ]},
+    { id: 'q6', question: 'How many bones are in the adult human body?', options: [
+      { id: 'a', text: '186', scores: { score: 0 } },
+      { id: 'b', text: '206', scores: { score: 1 }, correctAnswer: true },
+      { id: 'c', text: '226', scores: { score: 0 } },
+      { id: 'd', text: '246', scores: { score: 0 } },
+    ]},
+    { id: 'q7', question: 'Which artist painted the Mona Lisa?', options: [
+      { id: 'a', text: 'Michelangelo', scores: { score: 0 } },
+      { id: 'b', text: 'Raphael', scores: { score: 0 } },
+      { id: 'c', text: 'Leonardo da Vinci', scores: { score: 1 }, correctAnswer: true },
+      { id: 'd', text: 'Caravaggio', scores: { score: 0 } },
+    ]},
+    { id: 'q8', question: 'What is the smallest country in the world by land area?', options: [
+      { id: 'a', text: 'Monaco', scores: { score: 0 } },
+      { id: 'b', text: 'Vatican City', scores: { score: 1 }, correctAnswer: true },
+      { id: 'c', text: 'San Marino', scores: { score: 0 } },
+      { id: 'd', text: 'Liechtenstein', scores: { score: 0 } },
+    ]},
+    { id: 'q9', question: 'Which gas makes up approximately 78% of the Earth\'s atmosphere?', options: [
+      { id: 'a', text: 'Oxygen', scores: { score: 0 } },
+      { id: 'b', text: 'Carbon dioxide', scores: { score: 0 } },
+      { id: 'c', text: 'Nitrogen', scores: { score: 1 }, correctAnswer: true },
+      { id: 'd', text: 'Argon', scores: { score: 0 } },
+    ]},
+    { id: 'q10', question: 'In what year did the Titanic sink?', options: [
+      { id: 'a', text: '1905', scores: { score: 0 } },
+      { id: 'b', text: '1912', scores: { score: 1 }, correctAnswer: true },
+      { id: 'c', text: '1918', scores: { score: 0 } },
+      { id: 'd', text: '1923', scores: { score: 0 } },
+    ]},
+    { id: 'q11', question: 'Which movie won the first-ever Academy Award for Best Picture?', options: [
+      { id: 'a', text: 'Wings', scores: { score: 1 }, correctAnswer: true },
+      { id: 'b', text: 'Sunrise', scores: { score: 0 } },
+      { id: 'c', text: 'The Jazz Singer', scores: { score: 0 } },
+      { id: 'd', text: 'All Quiet on the Western Front', scores: { score: 0 } },
+    ]},
+    { id: 'q12', question: 'What is the longest river in Africa?', options: [
+      { id: 'a', text: 'Congo River', scores: { score: 0 } },
+      { id: 'b', text: 'Zambezi River', scores: { score: 0 } },
+      { id: 'c', text: 'Niger River', scores: { score: 0 } },
+      { id: 'd', text: 'Nile River', scores: { score: 1 }, correctAnswer: true },
+    ]},
+  ],
+  scoreRanges: [
+    {
+      min: 0,
+      max: 3,
+      result: {
+        id: 'novice',
+        title: 'Novice',
+        emoji: '🌱',
+        description: 'You are at the beginning of your trivia journey, and that is a great place to be! The world is full of fascinating facts waiting for you to discover them. Your curiosity is your superpower, and every new piece of knowledge adds to your growing understanding of the world. Keep exploring and you will be surprised how quickly you level up!',
+        traits: ['Curious', 'Open to learning', 'Humble', 'Growing'],
+        funFact: 'Studies show that people who actively seek new knowledge build stronger neural connections. Every trivia question you encounter is literally making your brain stronger!',
+      },
+    },
+    {
+      min: 4,
+      max: 6,
+      result: {
+        id: 'learner',
+        title: 'Learner',
+        emoji: '📖',
+        description: 'You have a solid foundation of general knowledge and a keen interest in the world around you. You pick up interesting facts from conversations, articles, and everyday life. With your natural curiosity and good memory, you are well on your way to becoming a formidable trivia contender. Keep feeding that hungry mind!',
+        traits: ['Attentive', 'Well-rounded', 'Inquisitive', 'Improving'],
+        funFact: 'The average person learns approximately 1,000 new facts per year just through daily life. Your active curiosity means you are probably learning at double that rate!',
+      },
+    },
+    {
+      min: 7,
+      max: 9,
+      result: {
+        id: 'expert',
+        title: 'Expert',
+        emoji: '🎓',
+        description: 'Impressive! You have a wide and deep pool of knowledge spanning multiple subjects. You are the person everyone wants on their trivia team, the friend who always has an interesting fact to share, and the one who makes learning look effortless. Your well-rounded expertise makes you a brilliant conversationalist and a walking encyclopedia of fascinating information.',
+        traits: ['Knowledgeable', 'Sharp', 'Well-read', 'Reliable'],
+        funFact: 'People with broad general knowledge tend to be more creative problem-solvers because they can draw connections across diverse fields. Your trivia skills are actually a superpower in disguise!',
+      },
+    },
+    {
+      min: 10,
+      max: 12,
+      result: {
+        id: 'genius',
+        title: 'Genius',
+        emoji: '🧠',
+        description: 'You are a true trivia titan with an extraordinary command of knowledge across geography, science, history, and culture. Your mind is a vast library of facts, and you have an uncanny ability to recall information with precision. Very few people reach this level, and you should be incredibly proud of the intellectual curiosity and dedication that got you here.',
+        traits: ['Brilliant', 'Encyclopedic', 'Exceptional', 'Inspiring'],
+        funFact: 'Scoring in the top tier on general knowledge tests correlates strongly with high fluid intelligence and lifelong learning habits. You are in elite intellectual company!',
+      },
+    },
+  ],
+};
